@@ -19,7 +19,6 @@ public class NextDate {
 	
 	public String run(int month, int day, int year) {
 
-
 		//Restrictions that the year must have the following invariant: 1801 <= year <= 2021
 		
 		if (day < 1 || month < 1 || month >12 || year < 1801 || year > 2021 || day > 31)
@@ -100,7 +99,7 @@ public class NextDate {
 						return "Invalid Input Date";
 				}
 				//
-				else if(day > 29) //invalid input as February will never have more than 29 days
+				else //invalid input as February will never have more than 29 days
 					return "Invalid Input Date";
 			}
 		}
